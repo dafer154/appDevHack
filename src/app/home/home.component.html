@@ -1,0 +1,58 @@
+<div *ngIf="loading">
+    <mat-spinner></mat-spinner>
+  </div>
+
+<div class="container">
+
+  <h1 class="principal-title">Personajes de Rick and Morty</h1>
+
+  <div class="wrapper-card">
+    <div class="card card-responsive" style="width: 18rem;" *ngFor="let character of characters | slice:0:3">
+      <a (click)="redirectCharacter(character.id)">
+        <img class="card-img-top" src={{character.image}} alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">{{character.name}}</h5>
+          <div class="button-card">
+            <a (click)="redirectCharacter(character.id)" class="btn btn-primary">Detalle</a>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+
+<div class="wrap-button"><button class="btn btn-primary" routerLink="characters">
+  Ver todos
+</button>
+</div>
+  
+
+</div>
+
+<style>
+  .wrapper-card {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-items: center;
+    align-items: center;
+    margin-top: 5%;
+  }
+
+  .wrap-button{
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+    padding-bottom: 10%;
+  }
+
+  .button-card{
+    color: white;
+    display: flex;
+    justify-content: center;
+  }
+
+    .card-responsive{
+    margin: 2%;
+  }
+</style>
