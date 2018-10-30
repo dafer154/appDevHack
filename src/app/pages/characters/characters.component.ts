@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CharacterService } from '../services/character.service';
+import { CharacterService } from '../../services/character.service';
 import { Router } from '@angular/router';
 
 
@@ -17,7 +17,6 @@ export class CharactersComponent implements OnInit {
   loading: boolean = true;
 
 
-
   constructor(
     private characterService: CharacterService,
     private router: Router
@@ -33,7 +32,6 @@ export class CharactersComponent implements OnInit {
     this.characterService.allCharacters().subscribe(response => {
       this.characters = response;
       this.loading = false;
-      console.log(this.characters);
     });
   }
 
@@ -41,7 +39,6 @@ export class CharactersComponent implements OnInit {
     this.characterService.charactersForPage(id).subscribe(response => {
       this.characters = response;
       this.loading = false;
-      console.log(this.characters);
     });
   }
 
@@ -55,6 +52,5 @@ export class CharactersComponent implements OnInit {
       arrayPages.push(i);
     }
     this.pages = arrayPages;
-    console.log(this.pages);
   }
 }

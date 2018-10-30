@@ -1,0 +1,30 @@
+.wrapper-card {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  justify-items: center;
+  align-items: center;
+  margin-top: 2%;
+}
+
+.wrap-button {
+  display: flex;
+  justify-content: center;
+  padding-top: 5%;
+}
+
+.button-card {
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.card-responsive {
+  margin: 2%;
+}
+
+.principal-title {
+  text-align: center;
+  padding-top: 4%;
+  font-weight: 400;
+}

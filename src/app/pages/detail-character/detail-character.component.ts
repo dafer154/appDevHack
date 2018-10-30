@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { CharacterService } from '../services/character.service';
+import { CharacterService } from '../../services/character.service';
 import { Router, ActivatedRoute } from '@angular/router';
+import { Character } from '../../classes/character';
 
 @Component({
   selector: 'app-detail-character',
@@ -9,11 +10,11 @@ import { Router, ActivatedRoute } from '@angular/router';
 })
 export class DetailCharacterComponent implements OnInit {
 
-  character = {};
+  character: Character[] = [];
+  loading = true;
 
   constructor(
     private characterService: CharacterService,
-    private router: Router,
     private route: ActivatedRoute
   ) { }
 
@@ -21,16 +22,13 @@ export class DetailCharacterComponent implements OnInit {
 
     this.route.params.subscribe((param: any ) => {
       const id = param['id'];
-      console.log(id);
       this.characterService.detailCharacter(id).subscribe(
         response => {
           this.character = response;
-          console.log(this.character);
+          this.loading = false;
         }
       );
     });
   }
-
-
 
 }

@@ -1,4 +1,21 @@
-# AppDevHack
+# AppDevHack - Rick and Morty
+
+Se realizo este proyecto como prueba para poder ingresar a DevHack, la cual se consume una api llamada Rick and morty donde se traen distintos personajes de la serie con sus caracteristicas
+
+In this project you will find:
+
+- **About component:** Informacion acerca de David Fernando Zuluaga 
+- **Character component:** Permite ver todos los personajes organizados por paginas
+- **Detail-character component:** Permite ver en detalle el personaje
+- **Home component:** Se muestran solo 3 personajes aleatoriamente, con la opcion de poder verlos todos
+- **Not-found component:** Maneja las urls no encontradas
+- **Header component:** Maneja el header y el menu de la aplicacion
+- **Footer component:** Maneja el footer de la aplicacion
+- **App component:** Componente principal
+- Styles, html, static images, Bootstrap 4
+**Deploy url:**  https://dafer154.github.io/appDevHack/
+
+**Author:** David Fernando Zuluaga
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.5.
 

@@ -1,0 +1,30 @@
+<div *ngIf="loading">
+  <mat-spinner></mat-spinner>
+</div>
+
+<h1 class="principal-title">Personajes de Rick and Morty</h1>
+
+
+<div class="container">
+  <label>Paginas:</label>
+  <div class="wrap-list">
+    <button class="btn btn-primary button-page" *ngFor="let page of pages" (click)="getCharacterForPage(page)">
+      {{page}}
+    </button>
+  </div>
+
+
+  <div class="wrapper-card">
+    <div class="card card-responsive" style="width: 18rem;" *ngFor="let character of characters">
+      <a (click)="redirectCharacter(character.id)">
+        <img class="card-img-top" src={{character.image}} alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">{{character.name}}</h5>
+          <div class="button-card">
+            <a (click)="redirectCharacter(character.id)" class="btn btn-primary">Detalle</a>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>

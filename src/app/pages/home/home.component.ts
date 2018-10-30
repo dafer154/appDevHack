@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CharacterService } from '../services/character.service';
+import { CharacterService } from '../../services/character.service';
 import { Router } from '@angular/router';
 
 @Component({
@@ -26,7 +26,6 @@ export class HomeComponent implements OnInit {
   getAllCharacters() {
     this.characterService.allCharacters().subscribe(response => {
       this.characters = response.sort(function() {return Math.random() - 0.5});
-      console.log(this.characters);
       this.loading = false;
     });
   }

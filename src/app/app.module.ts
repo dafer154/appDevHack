@@ -6,17 +6,17 @@ import { HttpModule } from '@angular/http';
 import { AppRoutingModule } from './app-routing.modules';
 
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { CharactersComponent } from './characters/characters.component';
-import { DetailCharacterComponent } from './detail-character/detail-character.component';
+import { HomeComponent } from './pages/home/home.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { HeaderComponent } from './shared/header/header.component';
+import { CharactersComponent } from './pages/characters/characters.component';
+import { DetailCharacterComponent } from './pages/detail-character/detail-character.component';
 
 //Services
 import { CharacterService } from './services/character.service';
-import { NotFoundComponent } from './not-found/not-found.component';
-import { HeaderComponent } from './shared/header/header.component';
+
 
 //Pagination
-
 import {NgxPaginationModule} from 'ngx-pagination';
 
 //Animations
@@ -24,6 +24,8 @@ import {NgxPaginationModule} from 'ngx-pagination';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonModule, MatCheckboxModule} from '@angular/material';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import { FooterComponent } from './shared/footer/footer.component';
+import { AboutComponent } from './pages/about/about.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
     CharactersComponent,
     DetailCharacterComponent,
     NotFoundComponent,
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

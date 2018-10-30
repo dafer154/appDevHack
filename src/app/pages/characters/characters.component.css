@@ -1,0 +1,52 @@
+.wrapper-card {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  justify-items: center;
+  align-items: center;
+  margin-top: 15%;
+}
+
+.wrap-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 8%;
+  padding-left: 4%;
+  padding-bottom: -7%;
+  margin-bottom: -9%;
+}
+
+label {
+  /* display: inline-block; */
+  width: 8em;
+  /* margin: 0.5em 0; */
+  color: #607d8b;
+  font-weight: bold;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 8%;
+  padding-left: 4%;
+  padding-bottom: -7%;
+  margin-bottom: -9%;
+}
+
+.principal-title {
+  text-align: center;
+  padding-top: 4%;
+  font-weight: 400;
+  margin-bottom: -4%;
+}
+
+.button-page {
+  margin: 1%;
+}
+
+.card-responsive {
+  margin: 2%;
+}
+
+.button-card {
+  color: white;
+  display: flex;
+  justify-content: center;
+}
