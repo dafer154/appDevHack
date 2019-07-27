@@ -1,6 +1,7 @@
-# AppDevHack - Rick and Morty
+Rick and Morty 
 
-Se realizo este proyecto como prueba para poder ingresar a DevHack, la cual se consume una api llamada Rick and morty donde se traen distintos personajes de la serie con sus caracteristicas
+Se consume un API llamado Rick and morty donde se traen distintos personajes de la serie con sus caracteristicas
+https://rickandmortyapi.com/
 
 In this project you will find:
 
